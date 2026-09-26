@@ -1,11 +1,11 @@
 # SPRINT-004 — Chapter 7 Sanitation
 
 **MISSION:** A broad, practical field manual for the first 30 days after the grid and internet go down.
-**Status:** AWAITING GREEN LIGHT
+**Status:** GREEN-LIT
 **Marathon:** MARATHON-001   **Rigour:** HIGH
 **Moves:** 1.1 #1 (chapters drafted, sourced, lint-clean)
-**Max steps:** 50   **File set:** manuscript/07-sanitation.md
-**Cut:** 2026-09-26   **Green-lit:** —
+**Max steps:** 50   **File set:** manuscript/07-sanitation.md, manuscript/02-water.md (fix only: hygiene/cooking litres line → WHO 2–6 L hygiene, 3–6 L cooking)
+**Cut:** 2026-09-26   **Green-lit:** 2026-09-26 by COA
 
 ## GOAL
 Chapter 7 Sanitation drafted to _dev/STYLE.md (read manuscript/02-water.md as the house example), lint-clean, rendered to A5.

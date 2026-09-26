@@ -113,8 +113,8 @@ Engagement is built in through Village Hack boxes, Day-X challenges, "what I wis
 **Harness:** `_dev/`
 
 ## 9 · STATUS
-SHIPPED:  repo scaffold (2026-09-26)
-NEXT:     triage opens MARATHON-001 (manuscript)
-PAUL:     choose printer
-PILLARS:  1·0  2·0  3·0
-BUDGET:   none open
+SHIPPED:  SPRINT-001 pipeline + Ch2 Water (2026-09-26)
+NEXT:     SPRINT-002..005 in parallel
+PAUL:     choose printer; walk Ch2 [src:] citations; read A5 PDF on paper
+PILLARS:  1·1  2·0  3·0
+BUDGET:   MARATHON-001 · 1/10

@@ -1,0 +1,29 @@
+{
+  "name": "thirty-days-dark",
+  "version": "1.0.0",
+  "description": "A practical field manual for the first 30 days after the grid and internet go down, written to help you thrive rather than just survive. It covers running a household, lifting a village, keeping morale up, and improvising clever fixes.",
+  "scripts": {
+    "lint": "node _dev/lint.js",
+    "build": "node _dev/build.js",
+    "check": "npm run lint && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Funder-Games/thirty-days-dark.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/Funder-Games/thirty-days-dark/issues"
+  },
+  "homepage": "https://github.com/Funder-Games/thirty-days-dark#readme",
+  "dependencies": {
+    "marked": "^18.0.14",
+    "pdfjs-dist": "^4.10.38",
+    "playwright-core": "^1.63.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

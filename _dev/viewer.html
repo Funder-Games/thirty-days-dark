@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>page shot harness</title>
+<style>
+  html, body { margin: 0; background: #6e7478; }
+  canvas { display: block; margin: 0 auto 8px; background: #fff; box-shadow: 0 0 0 1px #3a3f42; }
+</style>
+</head>
+<body>
+<!-- Test handle: window.TS = { ready, pages, text[], error }.
+     build.js waits on TS.ready, then screenshots #p1..#pN. -->
+<!-- pdfjs-dist is pinned to 4.x on purpose: 6.x calls Map#getOrInsertComputed and
+     Math.sumPrecise inside its worker, which the pinned Chromium (playwright build
+     1194) does not have, and the worker silently drops the page's text ops. -->
+<script type="module">
+import * as pdfjs from '/node_modules/pdfjs-dist/build/pdf.mjs';
+pdfjs.GlobalWorkerOptions.workerSrc = '/node_modules/pdfjs-dist/build/pdf.worker.mjs';
+
+const TS = { ready: false, pages: 0, text: [], error: null };
+window.TS = TS;
+
+const q = new URLSearchParams(location.search);
+const url = q.get('pdf');
+const scale = parseFloat(q.get('scale') || '2');
+
+(async () => {
+  try {
+    const doc = await pdfjs.getDocument({
+      url,
+      isEvalSupported: false,
+      standardFontDataUrl: '/node_modules/pdfjs-dist/standard_fonts/',
+      cMapUrl: '/node_modules/pdfjs-dist/cmaps/',
+      cMapPacked: true,
+    }).promise;
+    TS.pages = doc.numPages;
+    for (let i = 1; i <= doc.numPages; i += 1) {
+      const p = await doc.getPage(i);
+      const vp = p.getViewport({ scale });
+      const c = document.createElement('canvas');
+      c.id = 'p' + i;
+      c.width = Math.floor(vp.width);
+      c.height = Math.floor(vp.height);
+      document.body.appendChild(c);
+      await p.render({ canvas: c, canvasContext: c.getContext('2d'), viewport: vp }).promise;
+      const tc = await p.getTextContent();
+      TS.text.push(tc.items.map((t) => t.str).join(' ').replace(/\s+/g, ' ').trim());
+    }
+  } catch (e) {
+    TS.error = (e && e.message) ? e.message : String(e);
+  } finally {
+    TS.ready = true;
+  }
+})();
+</script>
+</body>
+</html>

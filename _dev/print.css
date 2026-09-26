@@ -1,0 +1,315 @@
+/* THIRTY DAYS DARK — print stylesheet (A5)
+   Donor: SAS Survival Handbook density, Dangerous Book for Boys charm.
+   Field-guide clean: generous whitespace, bold cards, framed art placeholders. */
+
+@page {
+  size: A5;
+}
+
+:root {
+  --ink: #16181a;
+  --ink-soft: #4a5055;
+  --ink-faint: #7b8288;
+  --rule: #c9ccce;
+  --rule-strong: #16181a;
+  --card-bg: #f2efe8;
+  --box-bg: #f7f5f0;
+  --accent: #2f4f4f;
+  --serif: "Bitstream Charter", "Liberation Serif", "DejaVu Serif", serif;
+  --sans: "Liberation Sans", "DejaVu Sans", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+body {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 10.4pt;
+  line-height: 1.52;
+  color: var(--ink);
+  text-align: left;
+  hyphens: auto;
+  orphans: 3;
+  widows: 3;
+}
+
+p { margin: 0 0 0.62em; }
+p + p { text-indent: 0; }
+
+/* ---------- chapter opener ---------- */
+
+.chapter { break-before: page; }
+.chapter:first-of-type { break-before: auto; }
+
+h1 {
+  font-family: var(--sans);
+  margin: 0 0 6mm;
+  padding-bottom: 3mm;
+  border-bottom: 1.6pt solid var(--rule-strong);
+  break-after: avoid;
+}
+h1 .eyebrow {
+  display: block;
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 2.5mm;
+}
+h1 .title {
+  display: block;
+  font-size: 26pt;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.promise {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 12pt;
+  line-height: 1.42;
+  color: var(--ink-soft);
+  margin: 0 0 7mm;
+  padding: 0;
+  border: 0;
+  max-width: 92%;
+}
+
+/* ---------- parts ---------- */
+
+/* each of the four parts opens on a fresh page: the Do This Now card has to fit
+   one page, and a checklist you can photocopy wants a page of its own */
+.part { break-inside: auto; break-before: page; }
+
+h2 {
+  font-family: var(--sans);
+  font-size: 11pt;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 4.5mm;
+  padding-top: 2.4mm;
+  border-top: 3pt solid var(--rule-strong);
+  break-after: avoid;
+}
+.part + .part h2 { margin-top: 8mm; }
+
+h3 {
+  font-family: var(--sans);
+  font-size: 10pt;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin: 5.5mm 0 1.8mm;
+  color: var(--accent);
+  break-after: avoid;
+}
+
+h4 {
+  font-family: var(--sans);
+  font-size: 9.2pt;
+  margin: 4mm 0 1.2mm;
+  break-after: avoid;
+}
+
+/* ---------- Do This Now card ---------- */
+
+.part--do-this-now {
+  /* the card is the page: heavy frame, tinted, roomy */
+}
+.part--do-this-now .cardbody {
+  border: 2.2pt solid var(--rule-strong);
+  background: var(--card-bg);
+  padding: 6mm 6mm 5mm;
+  break-inside: avoid;
+}
+.part--do-this-now .cardbody > :last-child { margin-bottom: 0; }
+.part--do-this-now ol,
+.part--do-this-now ul { margin: 0 0 0.5em; padding-left: 5.6mm; }
+.part--do-this-now li { margin-bottom: 0.42em; line-height: 1.44; }
+.part--do-this-now p { margin-bottom: 0.55em; }
+
+/* ---------- lists ---------- */
+
+ul, ol { margin: 0 0 0.7em; padding-left: 5.2mm; }
+li { margin-bottom: 0.26em; }
+li > ul, li > ol { margin-top: 0.22em; margin-bottom: 0.3em; }
+
+/* ---------- checklist ---------- */
+
+.checklist { list-style: none; padding-left: 0; }
+.checklist li {
+  position: relative;
+  padding-left: 7mm;
+  margin-bottom: 0.55em;
+  break-inside: avoid;
+}
+.cb {
+  position: absolute;
+  left: 0;
+  top: 0.22em;
+  width: 3.6mm;
+  height: 3.6mm;
+  border: 1pt solid var(--ink);
+  border-radius: 0.4mm;
+  background: #fff;
+}
+
+/* ---------- boxes ---------- */
+
+.box {
+  break-inside: avoid;
+  margin: 4.5mm 0 5mm;
+  padding: 4mm 4.4mm 3.4mm;
+  background: var(--box-bg);
+  border: 0.9pt solid var(--rule);
+  border-left: 3.4pt solid var(--rule-strong);
+}
+.box .boxlabel {
+  display: block;
+  font-family: var(--sans);
+  font-size: 7.6pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 1.6mm;
+  color: var(--ink);
+}
+.box p { margin-bottom: 0.45em; font-size: 9.9pt; }
+.box > :last-child { margin-bottom: 0; }
+.box ul, .box ol { margin-bottom: 0.3em; font-size: 9.9pt; }
+
+.box--village { border-left-color: #2f4f4f; background: #eef3f2; }
+.box--village .boxlabel { color: #2b4746; }
+.box--day-x { border-left-color: #7a4b16; background: #f7f1e7; }
+.box--day-x .boxlabel { color: #6d4312; }
+.box--stocked { border-left-color: #4a3f6b; background: #f1eff6; }
+.box--stocked .boxlabel { color: #423760; }
+.box--climate { border-left-color: #1f5673; background: #ecf2f6; }
+.box--climate .boxlabel { color: #1b4a63; }
+.box--plain { border-left-color: var(--ink-soft); }
+
+/* ---------- tables ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3.5mm 0 5mm;
+  font-size: 8.7pt;
+  line-height: 1.34;
+  break-inside: avoid;
+}
+thead th {
+  font-family: var(--sans);
+  font-size: 7.4pt;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 1.6mm 2mm 1.4mm 0;
+  border-bottom: 1.4pt solid var(--rule-strong);
+  vertical-align: bottom;
+}
+tbody td {
+  padding: 1.5mm 2mm 1.5mm 0;
+  border-bottom: 0.5pt solid var(--rule);
+  vertical-align: top;
+}
+tbody tr:nth-child(even) td { background: #f7f7f5; }
+tbody td:last-child, thead th:last-child { padding-right: 0; }
+table .src { display: block; }
+
+/* ---------- source tags ---------- */
+
+.src {
+  font-family: var(--sans);
+  font-size: 6.9pt;
+  line-height: 1.2;
+  color: var(--ink-faint);
+  white-space: normal;
+}
+
+/* ---------- image placeholders ---------- */
+
+.imgframe {
+  margin: 5mm 0 5.5mm;
+  break-inside: avoid;
+}
+.imgframe .frame {
+  height: 34mm;
+  border: 1pt dashed var(--ink-soft);
+  background:
+    repeating-linear-gradient(45deg, #faf9f6 0 3mm, #f1efe9 3mm 6mm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgframe .frame span {
+  font-family: var(--sans);
+  font-size: 7.2pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.imgframe figcaption {
+  font-family: var(--sans);
+  font-size: 7.4pt;
+  line-height: 1.3;
+  color: var(--ink-soft);
+  margin-top: 1.6mm;
+  padding-left: 0.5mm;
+}
+
+/* ---------- misc ---------- */
+
+hr {
+  border: 0;
+  border-top: 0.6pt solid var(--rule);
+  margin: 6mm 0;
+}
+strong { font-weight: 700; }
+code {
+  font-family: "DejaVu Sans Mono", monospace;
+  font-size: 8.8pt;
+  background: #f2f2ef;
+  padding: 0 0.6mm;
+}
+a { color: inherit; text-decoration: none; }
+
+/* front page of the whole-book build */
+.bookplate {
+  height: 168mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  break-after: page;
+}
+.bookplate .bt {
+  font-family: var(--sans);
+  font-size: 30pt;
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+}
+.bookplate .bs {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 12.5pt;
+  color: var(--ink-soft);
+  margin-top: 5mm;
+  max-width: 86%;
+}
+.bookplate .bm {
+  font-family: var(--sans);
+  font-size: 7.6pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-top: 9mm;
+  padding-top: 3mm;
+  border-top: 1.4pt solid var(--rule-strong);
+}

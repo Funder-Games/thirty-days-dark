@@ -1,0 +1,3 @@
+# build products: PDFs, intermediate HTML, probe json, page PNGs
+out/
+shots/
