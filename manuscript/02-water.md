@@ -24,12 +24,13 @@ Water is the fastest-moving problem in a blackout and the easiest one to get wro
 
 ### How much you actually need
 
-Work from three numbers and you will never be badly wrong.
+Work from these four numbers and you will never be badly wrong.
 
 | Purpose | Per person, per day | Source |
 |---|---|---|
-| Drinking and food | 2.5–3 litres | [src: WHO — Technical Notes on Drinking-water, Sanitation and Hygiene in Emergencies, 2013] |
-| Basic hygiene and cooking | 4–6 litres | [src: WHO — Technical Notes on Drinking-water, Sanitation and Hygiene in Emergencies, 2013] |
+| Drinking | 2.5–3 litres | [src: WHO — Technical Notes on Drinking-water, Sanitation and Hygiene in Emergencies, 2013] |
+| Basic hygiene | 2–6 litres | [src: WHO — Technical Notes on Drinking-water, Sanitation and Hygiene in Emergencies, 2013] |
+| Basic cooking | 3–6 litres | [src: WHO — Technical Notes on Drinking-water, Sanitation and Hygiene in Emergencies, 2013] |
 | Planning figure, all uses | 15 litres | [src: Sphere — Sphere Handbook: Minimum Standards in Humanitarian Response, 2018] |
 
 Drinking goes up in heat and with hard work, and the hygiene line is the one people cut first and regret first. Hand-washing is not a luxury item on that list.
