@@ -19,4 +19,4 @@ Corrections are the most valuable thing you can send, especially to numbers and 
 This book covers first aid and home care only. It is not medical advice. Every safety-critical number in it cites WHO, CDC, the Red Cross or an equivalent source.
 
 ## Licence
-To be decided. Until a licence is chosen, all rights are reserved.
+The text is licensed under [CC BY-SA 4.0](LICENSE). You may share and adapt it, provided you credit the source and license your changes the same way.

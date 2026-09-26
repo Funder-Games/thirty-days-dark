@@ -6,6 +6,7 @@
 - The deliverable is a book manuscript (Markdown chapters), not code. It ships as a print-ready PDF to a printing company. No hosting.
 - Probe: `_dev/lint.js` reports words per chapter, checks every safety-critical number carries a `[src:]` tag, and flags zero TODOs.
 - Shot: a chapter rendered to PDF (pandoc), with page PNGs in `_dev/shots/`.
+- Repo is public; manuscript published as it is written.
 - Rigour is HIGH because the book contains safety-critical numbers (water dosing, rehydration, first aid) that people will act on.
 
 ## 1 · WHAT THIS IS
@@ -20,13 +21,14 @@ A broad, practical field manual for the first 30 days after the grid and interne
 - Final illustration and photography. The book carries placeholders and one-line art briefs only.
 - Weapons, violence, and tactical content.
 - Medicine beyond first aid and home care.
+- No personal or private details in any committed file.
 - App or ebook editions.
 - The offline digital kit (Kiwix, maps, local AI), which is a separate job.
 
 ## 2 · WHO IT IS FOR
-Rural households and villages anywhere. Paul's household is the first reader. It is for any capable adult who wants a calm, clever plan instead of doom-prepping.
+Rural households and villages anywhere; any capable adult who wants a calm, clever plan instead of doom-prepping.
 **Call to action:** Prepare
-**Money:** none — open source, public repo (licence is a G4 decision; selling print copies later is G4)
+**Money:** none — free and open (CC BY-SA 4.0).
 
 ## 3 · SHAPE
 The book follows a time arc: the first hour, days 1–3, week 1, and weeks 2–4. Skill chapters hang off that arc.
@@ -85,7 +87,7 @@ Engagement is built in through Village Hack boxes, Day-X challenges, "what I wis
 - Target length is 45–60k words, roughly 4k per chapter.
 - Format is A5.
 - Every Do This Now card fits on one page.
-- Every safety-critical number is sourced from WHO, CDC, Red Cross, or equivalent.
+- Every safety-critical number is sourced (WHO/CDC/Red Cross); unsourced = lint fail.
 
 ### 3.5 · CONSTRAINTS
 - The book is in English.
@@ -106,13 +108,13 @@ Engagement is built in through Village Hack boxes, Day-X challenges, "what I wis
 | 2026-09-26 | Repo scaffold: live files, folders, README, CONTRIBUTING | — | — | |
 
 ## 8 · WORKING SET
-**Code:** github.com/Funder-Games/thirty-days-dark (public)   **Entry point:** `manuscript/`   **Launch:** `node _dev/build.js`
+**Code:** https://github.com/Funder-Games/thirty-days-dark   **Entry point:** `manuscript/`   **Launch:** `node _dev/build.js`
 **Live:** not deployed   **Docs:** project root
 **Harness:** `_dev/`
 
 ## 9 · STATUS
 SHIPPED:  repo scaffold (2026-09-26)
 NEXT:     triage opens MARATHON-001 (manuscript)
-PAUL:     choose licence — see PAUL-TASKS
+PAUL:     choose printer
 PILLARS:  1·0  2·0  3·0
 BUDGET:   none open
