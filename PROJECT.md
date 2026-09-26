@@ -113,8 +113,8 @@ Engagement is built in through Village Hack boxes, Day-X challenges, "what I wis
 **Harness:** `_dev/`
 
 ## 9 · STATUS
-SHIPPED:  SPRINT-001 pipeline + Ch2 Water (2026-09-26)
-NEXT:     SPRINT-002..005 in parallel
-PAUL:     choose printer; walk Ch2 [src:] citations; read A5 PDF on paper
+SHIPPED:  SPRINT-001..005 — pipeline, front matter, Ch1, Ch2, Ch4, Ch6, Ch7 (2026-09-26)
+NEXT:     Ch3 Power, Ch5 Heat and shelter; TRIAGE tooling line + compost wording
+PAUL:     choose printer; walk [src:] citations; read A5 PDFs on paper; First Hour framing
 PILLARS:  1·1  2·0  3·0
-BUDGET:   MARATHON-001 · 1/10
+BUDGET:   MARATHON-001 · 5/10

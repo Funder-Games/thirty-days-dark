@@ -6,3 +6,9 @@
   - finding: pdfjs-dist 6.x renders blank on pinned Chromium 1194; pinned 4.10.38.
   - finding: QC safety check: 7/8 numbers plausible; "hygiene and cooking 4–6 L" row looks low vs WHO (→ TRIAGE).
   - NEEDS WALK: verify the eight [src:] citations against source documents; read the A5 PDF at actual size on paper.
+- 2026-09-26 · SPRINT-002 shipped: front matter + Ch1 Day Zero. proof: lint PASS (1336/4186 w, 0 err) · build 00 pages=5, 01 pages=15 doThisNowPages=1 · QC viewed 01-day-zero-p02.png. Safety numbers (USDA 4/48/24 h, 4 °C/2 h, CDC 6 m generator, NFPA 30 cm, WHO 18 °C, 3 L) correct.
+- 2026-09-26 · SPRINT-003 shipped: Ch6 Health (4,878 w). proof: lint PASS · build 06 pages=19 doThisNowPages=1 · QC viewed 06-health-p02.png. ORS (½ tsp salt + 6 tsp sugar / 1 L), zinc, paracetamol/ibuprofen, CPR, fever thresholds correct.
+- 2026-09-26 · SPRINT-004 shipped: Ch7 Sanitation (4,520 w) + Ch2 hygiene/cooking fix (2–6 / 3–6 L). proof: lint PASS · build 07 pages=17 doThisNowPages=1 · QC viewed 07-sanitation-p02.png. Chlorine 1,000–5,000 ppm = 20–100 ml 5% bleach/L correct; Sphere 30 m/1.5 m/50 m/20 correct; compost storage "a year" flagged (→ TRIAGE).
+- 2026-09-26 · SPRINT-005 shipped: Ch4 Food (4,121 w). proof: lint PASS · build 04 pages=16 doThisNowPages=1 · QC viewed 04-food-p02.png. USDA temps 74/71/63 °C+3 min, 4–60 °C zone, −18 °C, formula ≤30 min cool, 2,100 kcal correct.
+  - full: npm run lint PASS files=6 words=22901 · npm run build PASS book pages=89 LOGS clean.
+- 2026-09-26 · run 1 closed: 5 cycles; queued #11 tooling + sanitation fix
