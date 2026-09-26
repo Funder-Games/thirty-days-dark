@@ -88,7 +88,7 @@ Then be sensible about the rest. Tonight you eat the thing that will spoil first
 
 Almost every death in a blackout is either a fire or carbon monoxide, and both come from someone cold, tired and improvising after dark. This is the one section of the book to read twice.
 
-Carbon monoxide has no colour and no smell, and it comes from anything burning fuel: a generator, a petrol pump, a barbecue, a charcoal tray, a camping stove, a patio heater, a car engine. It does not need to be in the room with you. It seeps through a wall from a garage, up from a cellar, in through a window above a porch. Run a generator outdoors only, and keep it at least 6 metres — 20 feet — from any door, window or vent, never in a garage, shed, porch or lean-to, even with the doors wide open [src: CDC — Carbon Monoxide Poisoning Prevention After an Emergency, 2021]. Never bring a barbecue or a charcoal tray inside, not into a house, a tent, a caravan or a garage [src: CDC — Carbon Monoxide Poisoning Prevention After an Emergency, 2021]. A camping stove used indoors needs real ventilation, a window genuinely open, and an adult standing over it.
+Carbon monoxide has no colour and no smell, and it comes from anything burning fuel: a generator, a petrol pump, a barbecue, a charcoal tray, a camping stove, a patio heater, a car engine. It does not need to be in the room with you. It seeps through a wall from a garage, up from a cellar, in through a window above a porch. Run a generator outdoors only, and keep it at least 6 metres — 20 feet — from any door, window or vent, never in a garage, shed, porch or lean-to, even with the doors wide open [src: CDC — Carbon Monoxide Poisoning Prevention After an Emergency, 2021]. Never bring a barbecue or a charcoal tray inside, not into a house, a tent, a caravan or a garage. A camping stove used indoors needs real ventilation, a window genuinely open, and an adult standing over it.
 
 Learn the tell. Carbon monoxide poisoning starts as a headache, dizziness, sickness, weakness and confusion, and it is easy to mistake for exhaustion or a bug [src: CDC — Carbon Monoxide Poisoning Prevention After an Emergency, 2021]. The give-away is that several people, and often the dog, feel ill at the same time and feel better outdoors. If that happens, everyone goes outside into fresh air immediately and nobody goes back in to fetch anything. Put a battery carbon monoxide alarm on every floor where people sleep, and test it today rather than adding it to a list.
 
@@ -140,6 +140,8 @@ Set out the night kit beside each bed — a torch, a bottle of drinking water an
 
 Day zero ends with three sheets of paper on the kitchen wall, and everything that follows hangs off them.
 
+[IMAGE: A kitchen door covered in three hand-written sheets — the log, the ledger and the rota — with a pencil on a string and a child's name against Keeper of the Torches]
+
 **The log.** Date, time, what happened, what was heard and who said it. One line each.
 
 **The ledger.** What you actually have, counted rather than remembered: litres of water, days of food, batteries, fuel, candles, medicines. Count it once properly on day one and update it as things are used.
@@ -147,8 +149,6 @@ Day zero ends with three sheets of paper on the kitchen wall, and everything tha
 **The rota.** Names against jobs: water, fuel and fire, cooking, the information listener, the outdoor round, and the person who checks on neighbours. Give children real jobs with real names — Keeper of the Torches is a genuine post — and change the rota weekly so nobody carries the same chore for a month.
 
 Then set the shape of the day: heavy work at first light, the main cooked meal in the afternoon while there is daylight to clean up by, and the evening for talk, cards and early bed. A household that writes things down and works to a rota beats a better-equipped household that relies on remembering, every single time. That is the whole of day zero: not a stockpile, a system.
-
-[IMAGE: A kitchen door covered in three hand-written sheets — the log, the ledger and the rota — with a pencil on a string and a child's name against Keeper of the Torches]
 
 ## Thrive Hacks
 
